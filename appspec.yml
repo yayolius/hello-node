@@ -27,7 +27,7 @@ hooks:
       timeout: 120
       runas: ubuntu
   ApplicationStop:
-    - location: sscripts/top.sh
+    - location: scripts/stop.sh
       timeout: 120
       runas: ubuntu
   ValidateService:
