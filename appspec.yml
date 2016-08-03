@@ -3,11 +3,6 @@ os: linux
 files:
   - source: /
     destination: /home/ubuntu/hello-node
-permissions:
-- object: /
-   pattern: "**"
-   owner: ubuntu
-   group: ubuntu
 
 hooks:
   BeforeInstall:
