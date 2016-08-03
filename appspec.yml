@@ -5,7 +5,6 @@ files:
     destination: /home/ubuntu/hello-node
 permissions:
 - object: /home/ubuntu/hello-node/
-   mode: 777
    owner: ubuntu
    group: ubuntu
    type:
