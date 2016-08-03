@@ -1,0 +1,32 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/hello-node
+permissions:
+- object: /
+   pattern: "**"
+   owner: ubuntu
+   group: ubuntu
+
+hooks:
+  BeforeInstall:
+    - location: scripts/install.sh
+      timeout: 600
+      runas: root
+  AfterInstall:
+    - location: scripts/post_install.sh
+      timeout: 600
+      runas: ubuntu
+  ApplicationStart:
+    - location: scripts/run.sh
+      timeout: 120
+      runas: ubuntu
+  ApplicationStop:
+    - location: sscripts/top.sh
+      timeout: 120
+      runas: ubuntu
+  ValidateService:
+    - location: scripts/validate.sh
+      timeout: 60
+      runas: ubuntu
