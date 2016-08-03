@@ -1,13 +1,17 @@
 version: 0.0
+
 os: linux
+
 files:
   - source: /
     destination: /home/ubuntu/hello-node
+
 permissions:
-- object: /home/ubuntu/hello-node/
-   owner: ubuntu
-   group: ubuntu
-   type:
+- object: /home/ubuntu/hello-node
+    mode: 777
+    owner: ubuntu
+    group: ubuntu
+    type:
         - directory
         - file
 
