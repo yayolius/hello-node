@@ -1,5 +1,5 @@
 #!/bin/bash
-result=$(curl -s http://localhost:8080/)
+result=$(curl -s http://localhost/)
 
 if [[ "$result" =~ "Hello world" ]]; then
     exit 0
