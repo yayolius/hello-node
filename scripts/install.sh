@@ -4,6 +4,9 @@ sudo apt-get install -y nodejs
 sudo apt-get install -y build-essential
 sudo npm install -g pm2 gulp
 
+#install and configure nginx
+sudo apt-get install nginx -y
+
 # I want to make sure that the directory is clean and has nothing left over from
 # previous deployments. The servers auto scale so the directory may or may not
 # exist.
