@@ -7,7 +7,7 @@ files:
     destination: /home/ubuntu/hello-node
 
 permissions:
-- object: /home/ubuntu/hello-node
+- object: /home/ubuntu/hello-node/
   pattern: "**"
   mode: 777
   owner: ubuntu
@@ -15,13 +15,7 @@ permissions:
   type:
     - directory
     - file
-- object: /home/ubuntu/hello-node/
-  mode: 777
-  owner: ubuntu
-  group: ubuntu
-  type:
-    - directory
-    - file 
+
 
 hooks:
   BeforeInstall:
