@@ -9,5 +9,6 @@ if [ -d /home/ubuntu/hello-node ]; then
 fi
 
 mkdir -vp /home/ubuntu/hello-node
+chown ubuntu:ubuntu /home/ubuntu/hello-node
 cd /home/ubuntu/hello-node
 npm install
