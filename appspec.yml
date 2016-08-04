@@ -8,12 +8,13 @@ files:
 
 permissions:
 - object: /home/ubuntu/hello-node
-    mode: 777
-    owner: ubuntu
-    group: ubuntu
-    type:
-        - directory
-        - file
+  pattern: "**"
+  mode: 777
+  owner: ubuntu
+  group: ubuntu
+  type:
+    - directory
+    - file
 
 hooks:
   BeforeInstall:
