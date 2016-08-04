@@ -8,7 +8,6 @@ files:
 
 permissions:
 - object: /home/ubuntu/hello-node
-  pattern: "**"
   mode: 777
   owner: ubuntu
   group: ubuntu
